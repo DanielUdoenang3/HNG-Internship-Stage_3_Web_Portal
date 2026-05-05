@@ -7,7 +7,6 @@ import {
   Clock
 } from 'lucide-react';
 import { dashboardService } from '../services/dashboard';
-import { profileService } from '../services/profiles';
 import type { DashboardMetrics } from '../types';
 
 const Dashboard = () => {

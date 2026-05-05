@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BrainCircuit, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 const NotFound = () => {
   return (

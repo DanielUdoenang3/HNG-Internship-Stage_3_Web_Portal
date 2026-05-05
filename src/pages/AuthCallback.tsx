@@ -13,6 +13,12 @@ const AuthCallback = () => {
       const state = searchParams.get('state');
       const error = searchParams.get('error');
 
+      // Validate state parameter to prevent CSRF
+      if (!state) {
+        navigate(`/login?error=invalid_state`, { replace: true });
+        return;
+      }
+
       // Handle errors from GitHub
       if (error) {
         navigate(`/login?error=auth_failed`, { replace: true });
